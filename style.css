@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+body {
+    background: #dde1e7;
+
+}
+
+.container {
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tasks {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background: #dde1e7;
+    box-shadow: -3px -3px 7px #ffffff73,
+        2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+#task-form{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.text {
+    padding: 7px 10px;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+.text:focus {
+    box-shadow: inset 2px 2px 5px #babecc,
+        inset -3px -3px 10px #ffffff;
+}
+
+input {
+    width: 350px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid rgba(70, 69, 69, 0.446);
+    color: #595959;
+    background: #dde1e7;
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 5px #babecc,
+        inset -3px -3px 10px #ffffff;
+}
+
+img {
+    width: 25px;
+}
+
+button {
+    background: #dde1e7;
+    border: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.action {
+    padding: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+h3{
+    margin: 10px;
+}
+@media(max-width:900px){
+    .tasks{
+        width: 80%;
+    }
+}
+@media(max-width:500px){
+    input{
+        width: 270px;
+    }
+}
